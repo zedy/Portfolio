@@ -1,0 +1,1150 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "sprites/_sprite_bundle";
+@import "compass/reset";
+@import "vars";
+
+/* ===================================
+   Animations for the Loader
+   =================================== */
+@-webkit-keyframes spin {
+  0%   { 
+      -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(0deg);  /* IE 9 */
+      transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+      -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(360deg);  /* IE 9 */
+      transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}
+@-moz-keyframes spin {
+  0%   { 
+      -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(0deg);  /* IE 9 */
+      transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+  100% {
+      -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+      -ms-transform: rotate(360deg);  /* IE 9 */
+      transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+  }
+}
+/* ===================================
+   Animations for the Bio box
+   =================================== */
+@keyframes pop-in {
+  0% { 
+    opacity: 0;
+    transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+  }
+  100% { 
+    opacity: 1;
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+@-moz-keyframes pop-in {
+  0% { 
+    opacity: 0;
+    transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+  }
+  100% { 
+    opacity: 1;
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+@-webkit-keyframes pop-in {
+  0% { 
+    opacity: 0;
+    transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -webkit-transform: scale(0.1);
+  }
+  100% { 
+    opacity: 1;
+    transform: scale(1);
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+/* ===================================
+    Navbar rules
+   =================================== */
+.navbar-bg {
+  background-image: linear-gradient(to bottom, rgba(23, 23, 23, 0.5) 0px, rgba(54, 54, 54, 0.7) 100%);
+  background-repeat: repeat-x;
+}
+#navbar {  
+  ul {
+    list-style-type: none;
+  }
+  li {
+    padding:14px 10px;
+    color: white;
+    font-family: $nexaLight;
+    font-size: 20px;
+    display:inline-block;
+    text-transform: none;
+    cursor: pointer;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;    
+    &:hover {
+      color: $navOrange;
+    }
+  }
+}
+#floatingnavbar {
+  overflow: hidden;
+  position: fixed;
+  top: 15%;
+  z-index: 1001;
+  width: 0;
+  .navbar-toggle {
+    display:block !important;
+    margin-right:1px;
+  }
+  .floatingmenu {
+    display: flex;
+    height: auto;
+    width: 100%;
+  }
+  .info {
+    color: white;
+    display: inline-block;
+    font-family: $nexaBold;
+    font-size: 18px;
+    padding: 18px 0 0 10px;
+    position: absolute;
+    overflow: hidden;
+    letter-spacing: 1px;
+    width:164px;
+    &::first-letter {
+      color: #ffaa4f;
+    }
+  }
+  ul {
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    list-style-type: none;
+    width: 100%;
+  }
+  li {
+    padding:14px 10px 14px 12px;
+    color: white;
+    font-family: $nexaLight;
+    font-size: 20px;
+    display:block;
+    text-transform: none;
+    cursor: pointer;
+    width: 100%;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    &:hover {
+      color: $navOrange;
+    }
+  }
+}
+/* ===================================
+   Section 01 rules
+   =================================== */
+#section01.bg1 {
+  background-attachment:fixed;
+  background-image: url("../images/section01.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 0 none;
+  bottom: 0;
+  content: " ";
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+#intro {
+  display: block;
+  width: 865px;  
+  margin: 0 auto;
+  padding-top: 200px;
+  .box {
+    opacity:0;
+    div {
+      display: inline-block;
+      padding-left: 40px;
+    }
+    p {
+      text-indent: -9999px;      
+    }
+    .insignia {
+      display: block;
+      font-size: 90px;
+      font-family: $nexaLight;
+      &::first-letter {
+        color:$mainRed;
+      }
+    }
+    .bottom {
+      display: block;
+      font-size: 46px;
+      font-family: $nexaBold;
+      text-shadow: 1px 1px 1px #000000;
+      color:white;
+    }
+  }
+  .large {
+    background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
+    display: inline-block;
+    vertical-align: top;
+    height: 135px;    
+    margin: 0 auto;
+    width: 135px;   
+    background: url("../images/mainicon.png"); 
+    background-repeat: no-repeat; 
+    background-size: 100% auto;
+  }
+  .small {
+    background: rgba(255, 255, 255, 0.75) none repeat scroll 0 0;
+    border-radius: 14px;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.5);
+    display: block;
+    margin: 15px auto 0;
+    opacity:0;
+  }
+  .small1 {
+    width:10px;
+    height: 10px;
+  }
+  .small2 {
+    width:14px;
+    height: 14px;
+  }
+  .small3 {
+    width:18px;
+    height: 18px;
+  }
+  .small4 {
+    color: $mainRed;
+    font-size: initial;
+    height: 22px;
+    padding: 4px 0 0 2px;
+    width: 22px;
+  }
+}
+/* ===================================
+   Section 02 rules | Projects
+   =================================== */
+#section02 {
+  background-color: #e7e7e7;
+  padding: 80px 0 100px 0;
+  .heading {
+    @extend .icons-projects; 
+  }
+  .devider {
+    width:100%;
+    display:block;
+    border-top:4px solid #919191;
+    margin: 20px 0;
+  }
+  .title {
+    color:$projectInfo;
+    font-family:$nexaBold;
+    font-size:26px;
+    margin-bottom: 15px;
+    span {
+      color:$mainRed;
+    }
+  }
+  .featurepicwrapper {
+    cursor: pointer;
+    position: relative;
+    opacity:0.8;
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+    &:hover {
+      opacity: 1;
+      .clickme {
+        opacity: 1;
+      }
+    }
+    img {
+      border-radius: 5px;
+      box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.5);
+      -moz-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.5);
+      -webkit-box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.5);
+    }
+  }
+  .clickme {
+    background: rgba(77, 82, 88, 0.5) none repeat scroll 0 0;
+    border: 2px dashed rgba(255,255,255, 0.6);
+    border-radius: 5px;
+    color: white;
+    font-family: nexa_boldregular;
+    left: calc(50% - 95px);
+    padding: 15px;
+    position: absolute;
+    top: calc(50% - 20px);
+    opacity:0;
+    transition: opacity 0.75s;
+    -webkit-transition: opacity 0.75s;
+    -moz-transition: opacity 0.75s;
+  }
+  .info {
+    overflow-x: visible;
+    overflow-y: scroll;
+  }
+  .info > div {
+    margin-bottom: 5px;
+  }
+  .info > div > span:first-child {
+    color:$mainRed;
+    font-family:$nexaBold;
+    font-size:17px;
+    width:70px;
+    display: inline-block;
+  }
+  .info p,
+  .info > div > span:last-child {
+    color:$projectInfo;
+    font-family:$nexaLight;
+    font-size:17px;
+    display: inline-block;
+  }
+  .info p {
+    text-indent: 71px;
+  }
+  .details span {
+    position: absolute;
+  }
+  .info ul {
+    list-style-type: none;
+    width:calc(100% - 71px);
+    float:right;
+  }
+  .info li {
+    text-transform: uppercase;
+    color:white;
+    display:inline-block;
+    background: $projectInfo;
+    padding: 3px;
+    margin-bottom: 2px;
+    transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    cursor:pointer;
+    border-radius: 5px;
+    &:hover {
+      background: $mainRed;
+    }
+  }
+}
+/* ===================================
+   Projects carousel
+   =================================== */
+#main-carousel {
+  .item img {
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  .carousel-caption {
+    font-family:$nexaLight;
+    font-size:20px;
+    background: rgba(0,0,0,0.55);
+    left:15px;
+    right:15px;
+  }
+  .carousel-indicators {
+    bottom: -40px;
+  }
+  .carousel-control {
+    background-image: none;
+    width: 25px;
+    color:$slate;
+    opacity:1;
+  }
+  .carousel-indicators > li {
+    border: 1px solid $slate;
+    background:transparent;
+    height: 15px;
+    width: 15px;
+    margin:0;
+  }
+  .carousel-indicators .active {
+    border: 1px solid $slate !important;
+    background: $slate !important;
+    height: 15px;
+    width: 15px;
+  }
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right,
+  .carousel-control .icon-prev,
+  .carousel-control .icon-next {
+    background-color: #e7e7e7;
+    border-radius: 30px;
+    font-size: 30px;
+    height: 53px;
+    margin-top: -15px;
+    padding-top: 12px;
+    width: 55px;
+  }
+  .carousel-control .glyphicon-chevron-left {
+    margin-left:-34px;
+  }
+  .carousel-control .glyphicon-chevron-right {
+    margin-right:-34px;
+  }
+}
+
+/* ===================================
+   Section 03 rules | Bio
+   =================================== */
+#section03 { 
+  .bg {
+    background-attachment: fixed;
+    background-image: url("../images/parallaxbox2.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 none;
+    bottom: 0;
+    content: " ";
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 100px;
+    text-align: center;
+    &:before {
+      content: " ";
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+    }
+  }
+  .heading {
+    @extend .icons-bio; 
+  }
+  .wrapper {
+    background-color: #e7e7e7;
+    background: url("../images/patterns/redox_01.png");
+    border-radius: 3px;
+    opacity:0.9;
+    padding:80px 15px;
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 4px 4px 1px rgba(0, 0, 0, 0.3);
+  }
+  .pop-in {
+    opacity:1;
+    animation: pop-in 1s ease;
+    -moz-animation: pop-in 1s ease;
+    -webkit-animation: pop-in 1s ease;
+  }
+  .text {
+    font-family: $nexaLight;
+    font-size: 20px;
+    padding: 10px 70px;
+    text-align: left;
+    line-height: 1.2;
+  }
+  .picture {
+    background: rgba(0, 0, 0, 0) url("../images/profilepicture.png") no-repeat scroll 0 0 / 100% auto;
+    border-radius: 101px;
+    box-shadow: 0 0 1px 7px rgba(255, 255, 255, 0.5) inset;
+    display: block;
+    height: 170px;
+    margin-top: 0;
+    position: absolute;
+    width: 170px;
+    top: -90px;
+  }
+}
+/* ===================================
+   Section 05 rules | Parallax box 2
+   =================================== */
+#section05 {
+  position:relative;
+  .bg {
+    background-attachment: fixed;
+    background-image: url("../images/section05.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0 none;
+    bottom: 0;
+    content: " ";
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+  .quote {
+    background: #ffffff none repeat scroll 0 0;
+    position: absolute;
+    top:50px;
+    opacity: 0;
+  }
+  .pop-in {
+    opacity:1;
+    animation: pop-in 1s ease;
+    -moz-animation: pop-in 1s ease;
+    -webkit-animation: pop-in 1s ease;
+  }
+  span {
+    display: block;
+  }
+  .quoteline {
+    font-family: Helvetica;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .quoter {
+    background: #808080 none repeat scroll 0 0;
+    color: #ffffff;
+    font-family: nexa_lightregular;
+    padding: 4px 12px;
+    text-align: right;
+  }
+  .quote1 {
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.6);
+    left: 10%;
+    top:35%;
+  }
+  .quote2 {
+    box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.6);
+    left: 37%;
+    top:15%;
+  }
+  .quote3 {
+    box-shadow: -3px 3px 5px 1px rgba(0, 0, 0, 0.6);
+    left: 48%;
+    top: 46%;
+  }
+  .quote4 {
+    box-shadow: -3px 3px 5px 1px rgba(0, 0, 0, 0.6);
+    left: 72%;
+    top: 66%;
+  }
+}
+/* ===================================
+   Section 04 rules | T&S
+   =================================== */
+#section04 {
+  padding:80px 0;
+  .iconwrapper-mobile {
+    display: none;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+  .iconwrapper {
+    display: table;
+    height: 175px;
+    margin: 0 auto -50px;
+    padding-top: 60px;
+    position: relative;
+    transition: padding 0.7s ease 0s;
+    z-index: 8;
+    &:hover {
+      padding-top:0px;
+    }
+    div {
+      width:90px;
+      height: 115px;
+      display: inline-block; 
+      &:hover {
+        .toolname {
+          opacity:1;
+        } 
+      }          
+    }
+  }
+  .heading {
+    @extend .icons-ts; 
+  }
+  .toolname {
+    display: block;
+    font-family: $nexaLight;
+    font-size: 16px;
+    padding-bottom: 5px;
+    text-align: center;
+    opacity:0;
+    transition: opacity 0.3s;
+  }
+  .devider {
+    background: rgb(255, 255, 255) none repeat scroll 0 0;
+    border-top: 4px solid rgb(255, 170, 79);
+    display: block;
+    height: 70px;
+    margin-bottom: 20px;
+    width: 100%;
+    position:relative;
+    z-index: 10;
+  }
+  .tool {
+    width:90px;
+    height:104px;
+    display: inline-block;
+    margin:0 auto;
+    //border-radius:50px;
+    position:relative;
+    filter: grayscale(50%);
+    opacity: 1;
+    z-index:5;
+    transition: border-radius 0.5, filter 3s;
+    -webkit-transition: border-radius 0.5, filter 3s;
+    -moz-transition: border-radius 0.5, filter 3s;
+    &:hover {
+      filter: grayscale(1%);
+      border-radius:1px;
+    }
+  }
+  .html {
+    @extend .icons-html;
+    //@include sprite-background-position($icons-sprites, html, 11px, 10px); 
+  }
+  .css {
+    @extend .icons-css; 
+  }
+  .php {
+    @extend .icons-php;
+  }
+  .sql {
+    @extend .icons-sql;
+    @include sprite-background-position($icons-sprites, sql, 0, 16px); 
+  }
+  .boot {
+    @extend .icons-boot;
+  }
+  .jquery {
+    @extend .icons-jquery;
+    @include sprite-background-position($icons-sprites, jquery, 0, -1px); 
+  }
+  .js {
+    @extend .icons-js;
+  }
+  .drupal {
+    @extend .icons-drupal;
+    @include sprite-background-position($icons-sprites, drupal, 0, -3px); 
+  }
+  .sass {
+    @extend .icons-sasslogo;
+  }
+  .ps {
+    @extend .icons-ps;
+  }
+  .ai {
+    @extend .icons-ai;
+  }
+  .service {    
+    border-radius: 3px;
+    padding: 15px;
+    height: 100%;
+    cursor: pointer;
+    &:hover img {
+      filter: grayscale(0);
+    }
+  }
+  .wrapper {
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .wrapper > div {
+    display: flex;
+    flex-direction: row;
+  } 
+  .single {
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    transition:background-color 0.5s, border-top 0.5s;
+    background-color: rgba(234, 234, 234, 0.4);
+    &:hover {
+      border-top: 1px solid rgba(0, 0, 0, 1);
+      background-color: #ffaa4f;
+      .color h4 {
+        color: #123257 !important;
+        //text-shadow: 1px 2px 1px white;
+      }
+    }
+  }
+  .picture {
+    height: 150px;
+    text-align: center;
+  }
+  .picture img {
+    margin:0 auto;
+    display: inline-block;
+    max-height: 100%;
+    filter: grayscale(100%);
+    transition: filter 0.3s;    
+  }
+  .color {
+    .picture img {
+      filter: grayscale(0) !important;  
+    }
+    h4 {
+      color: #ffaa4f;
+      //text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.68);
+    }
+  }
+  .text {
+    display: block;
+    margin-top: 22px;
+  }
+  .manymore {    
+    margin-top: 50px !important;
+    p {
+      background: rgba(234, 234, 234, 0.5) none repeat scroll 0 0;
+      border-radius: 3px;
+      border-top: 4px solid rgb(255, 170, 79);
+      box-shadow: 0 2px 2px -1px rgb(112, 128, 144);
+      padding: 20px;
+    }
+  }
+  p {
+    display: none;
+    font-family: nexa_lightregular;
+    font-size: 18px;
+    line-height: 1.2em;
+    padding: 10px 0;
+    text-align: justify;
+  }
+  h4 {
+    color: rgb(18, 50, 87);
+    font-family: nexa_boldregular;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+/* ===================================
+   Section 07 rules | Contact
+   =================================== */
+#section07 {
+  background: #4d5258 url("../images/patterns/footer_lodyas.jpg") repeat scroll 0 0;
+  //background-blend-mode: luminosity;
+  padding: 80px 0;
+  .heading {
+    color:#f2f2f2;
+    @extend .icons-contact;
+  }
+  .name, .email, .subject {
+    height: 40px;
+    padding: 0 10px;
+    width: 297px;
+    border:none;
+    border-radius:3px;
+    background-color: #eaeaea;
+    margin-bottom: 5px;
+  }
+  .name, .subject { 
+    margin-right: 5px;
+  }
+  .body {
+    display: block;
+    margin: 11px 0;
+    border: none;
+    height:79px;
+    padding: 9px 30px 9px 9px;
+    border-radius:3px;
+    resize: none;
+    width: 516px;
+    background-color: #eaeaea;
+  }
+  .btn {
+    background-color: rgba(0, 0, 0, 0);
+    display: block; 
+    height: 80px;
+    margin: 0 auto;
+    position: absolute;
+    right: 7px;
+    text-indent: -9999px;
+    bottom: 11px;
+    width: 80px; 
+    @extend .icons-send2;
+    transition:background-image 0.4s;
+    //@include sprite-background-position($icons-sprites, up2, 9px, 17px); 
+    &:hover {
+      @extend .icons-send3; 
+    }
+  }
+  .status {
+    display: block;
+    margin-top: 15px;
+  }
+  .error {
+    background: rgb(226, 194, 70) none repeat scroll 0 0;
+  }
+  .success {
+    background: #62c64e;
+  }
+  .error,.success {    
+    display: table-cell;
+    font-family: nexa_boldregular;
+    font-size: 16px;
+    padding: 10px;
+  }
+  .form form {
+    display:table;
+    margin: 0 auto;
+    position: relative;
+    width:606px;
+    input {
+      float:left;
+    }
+  }
+  .check {
+    width:25px;
+    height: 25px;
+    display: inline-block;
+  }
+  .invalid {
+    background: url('../images/nocheck.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: #eaeaea;
+  }
+  .valid {    
+    background: url('../images/check.png');
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-color: #eaeaea;
+  }
+  .share {
+    display: table;
+    margin: 70px auto 0;
+    .socials {
+      display: inline-block;
+      width:60px;
+      height: 60px; 
+      border-radius: 50px;
+      background-color:white;
+      opacity:0.85;
+      margin-right: 10px;
+      transition: box-shadow 1s, opacity 1s, background-color 0.5s, background-image 0.3s; 
+      -webkit-transition: box-shadow 1s, opacity 1s, background-color 0.5s, background-image 0.3s; 
+      -moz-transition: box-shadow 1s, opacity 1s, background-color 0.5s, background-image 0.3s; 
+      box-shadow:unset;
+    }
+    .up {
+      @extend .icons-up2;
+      @include sprite-background-position($icons-sprites, up2, 9px, 17px); 
+      &:hover {
+        @extend .icons-up2active;
+        @include sprite-background-position($icons-sprites, up2active, 9px, 17px); 
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3) inset;
+        background-color:#2f8800;
+        opacity:1;
+      }
+    }  
+    .in {
+      @extend .icons-in2;
+      @include sprite-background-position($icons-sprites, in2, 11px, 10px); 
+      &:hover {
+        @extend .icons-in2active;
+        @include sprite-background-position($icons-sprites, in2active, 11px, 10px);
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3) inset;
+        background-color:#4875B4;
+        opacity:1; 
+      }
+    }
+    .gp { 
+      @extend .icons-gp2;
+      @include sprite-background-position($icons-sprites, gp2, 18px, 11px); 
+      &:hover {
+        @extend .icons-gp2active;
+        @include sprite-background-position($icons-sprites, gp2active, 18px, 11px); 
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3) inset;
+        background-color:#dd4b39;
+        opacity:1;
+      }
+    }
+    .fb {
+      @extend .icons-fb2;
+      @include sprite-background-position($icons-sprites, fb2, 22px, 12px); 
+      &:hover {
+        @extend .icons-fb2active;
+        @include sprite-background-position($icons-sprites, fb2active, 22px, 12px);
+        box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.3) inset;
+        background-color:#3b5998;
+        opacity:1;
+      }
+    } 
+  }
+}
+/* ===================================
+   Footer
+   =================================== */
+footer {
+  background: #eaeaea;
+  border-top:2px solid rgba(255,255,255,0.4);
+  height: 80px;
+  p {
+    color: #808080;
+    display: block;
+    font-family: Helvetica;
+    font-size: 14px;
+    line-height: 1.2em;
+    padding-top: 24px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+/* ===================================
+   Global rules
+   =================================== */
+.loading {
+  overflow:hidden;
+}
+section:not(#section03) {
+  position: relative;
+  z-index: 999;
+}
+#loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 4001;
+  background-attachment: scroll;
+  background-clip: border-box;
+  background-color: $slate;
+  background-image: url("../images/patterns/noisy_net.png");
+  background-origin: padding-box;
+  background-position: 0 0;
+  background-repeat: repeat;
+  border: medium none;
+  .text {
+    color: #ffffff;
+    display: block;
+    font-family: $nexaLight;
+    left: 50%;
+    margin-left: -75px;
+    position: absolute;
+    text-align: center;
+    top: 49%;
+    width: 150px;
+  }
+}
+#loader {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #3498db;
+  -webkit-animation: spin 2s linear infinite;
+  -moz-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite; 
+}
+#loader:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #e74c3c;
+  -webkit-animation: spin 3s linear infinite;
+  -moz-animation: spin 3s linear infinite;
+  animation: spin 3s linear infinite;
+}
+#loader:after {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-top-color: #f9c922;
+  -webkit-animation: spin 1.5s linear infinite;
+  -moz-animation: spin 1.5s linear infinite;
+  animation: spin 1.5s linear infinite;
+}
+.indicators {
+  border-radius: 5px;
+  padding: 3px;
+  position: fixed;
+  right: 15px;
+  top: calc(50% - 100px);
+  z-index: 1001;
+  li {
+    background: rgba(0, 0, 0, 0.2) none repeat scroll 0 0;
+    border: 1px solid #808080;
+    border-radius: 10px;
+    content: " ";
+    cursor: pointer;
+    height: 12px;
+    margin: 10px 0;
+    width: 12px;
+    transition: background 0.2s;
+    text-indent: -9999px;
+    &:hover {
+      background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+    }
+  }
+  .active {
+    background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+  }
+}
+.heading {
+  font-family: $nexaBold;
+  font-size: 40px;
+  letter-spacing: -3px;
+  display: block;
+  margin: 30px 0 40px;
+  text-indent: -9999px;
+}
+.nomargin {
+  margin:0;
+}
+.nopadding {
+  padding:0;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+#home {
+  position:absolute;
+  top:0;
+  left:0;
+}
+.emailcontent {
+  display:block;
+  p {
+    width:100%;
+    margin: 5px 0;
+  }
+  span {
+    font-weight: 700;
+    display:inline-block;
+    padding-right: 15px;
+  }  
+}
+.review {
+  color: #4169e1;
+  cursor: pointer;
+  display: block;
+  margin: 10px 0;
+}
+/* ===================================
+   Project popup box
+   =================================== */
+#popupBox {
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;    
+  z-index: 9999;
+  .backdrop {
+    background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+    border: 0 none;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 199;
+  }
+  .boxwrapper {    
+    position:relative;
+    top: 50px;
+    width: 1000px;
+    height: 700px; 
+    z-index: 1001;
+  }  
+  .closebox {
+    @extend .icons-close;
+    @include sprite-background-position($icons-sprites, close, 2px, 2px); 
+    background-color: rgba(255, 255, 255, 0.5);
+    border-bottom: 4px solid rgba(0, 0, 0, 0.5);
+    border-right: 4px solid rgba(0, 0, 0, 0.5);
+    border-top: 4px solid rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    height: 42px;
+    position: absolute;
+    right: -36px;
+    top: 0;
+    width: 40px;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  .inner {
+    height: 100%;
+    overflow: hidden;
+    cursor: crosshair;
+    height: 700px;
+    position:relative;
+  }
+  .featureimage {
+    position:absolute;
+  }
+  .outer {
+    background: rgba(255, 255, 255, 0.5) none repeat scroll 0 0;
+    border: 4px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    height: 100%;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+  }
+}
+/* ===================================
+   Default bootstrap overrrides
+   =================================== */
+.navbar-toggle .icon-bar {
+  color:white;
+  background: white;
+}
+.carousel-caption {
+  padding-bottom: 20px;
+}
+.carousel-control {
+  z-index: 60;
+}
+#modal {
+  .modal-title {
+    font-family: $nexaBold;
+    font-size: 20px;
+  }
+  .status {
+    font-family: $nexaLight;
+  }
+  .error {
+    font-family: $nexaLight;
+  }
+}
+
+/*** End of file ***/

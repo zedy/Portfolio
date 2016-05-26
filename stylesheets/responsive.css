@@ -1,0 +1,351 @@
+/**
+ *   For mediaqueries.
+ */
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1376px) and (min-width: 992px) {
+  /* line 8, ../sass/responsive.scss */
+  #section05 .quote1 {
+    left: 5%;
+    top: 35%;
+  }
+  /* line 12, ../sass/responsive.scss */
+  #section05 .quote2 {
+    left: 25%;
+    top: 15%;
+  }
+  /* line 16, ../sass/responsive.scss */
+  #section05 .quote3 {
+    left: 47%;
+    top: 46%;
+  }
+  /* line 20, ../sass/responsive.scss */
+  #section05 .quote4 {
+    left: 56%;
+    top: 66%;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  /* line 28, ../sass/responsive.scss */
+  #section02 .info {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  /* line 34, ../sass/responsive.scss */
+  #popupBox .boxwrapper {
+    left: 0 !important;
+    width: calc(100% - 36px);
+  }
+
+  /* line 39, ../sass/responsive.scss */
+  #floatingnavbar .info {
+    display: none;
+  }
+
+  /* line 44, ../sass/responsive.scss */
+  #section04 .iconwrapper {
+    display: none;
+  }
+  /* line 47, ../sass/responsive.scss */
+  #section04 .iconwrapper-mobile {
+    padding-top: 30px;
+    display: block;
+  }
+  /* line 50, ../sass/responsive.scss */
+  #section04 .iconwrapper-mobile img {
+    width: 100%;
+  }
+  /* line 54, ../sass/responsive.scss */
+  #section04 .devider {
+    margin-top: 19em;
+  }
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) and (min-width: 768px) {
+  /* line 62, ../sass/responsive.scss */
+  #intro {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* line 66, ../sass/responsive.scss */
+  #intro img {
+    margin: 0 auto;
+  }
+
+  /* line 70, ../sass/responsive.scss */
+  #section02 .featurepicwrapper {
+    margin-bottom: 30px;
+  }
+
+  /* line 73, ../sass/responsive.scss */
+  #section04 .picture img {
+    width: 100%;
+  }
+
+  /* line 77, ../sass/responsive.scss */
+  #section05 .quote1 {
+    left: 5%;
+    top: 35%;
+  }
+  /* line 81, ../sass/responsive.scss */
+  #section05 .quote2 {
+    left: 40%;
+    top: 15%;
+  }
+  /* line 85, ../sass/responsive.scss */
+  #section05 .quote3 {
+    left: 47%;
+    top: 52%;
+  }
+  /* line 89, ../sass/responsive.scss */
+  #section05 .quote4 {
+    left: 27%;
+    top: 74%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 97, ../sass/responsive.scss */
+  #navbar {
+    display: block;
+    margin: 0 auto;
+    width: 406px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /* line 107, ../sass/responsive.scss */
+  #fixednavbar .navbar-toggle {
+    display: block;
+  }
+
+  /* line 112, ../sass/responsive.scss */
+  #section02 .featurepicwrapper {
+    margin-bottom: 30px;
+  }
+  /* line 115, ../sass/responsive.scss */
+  #section02 .clickme {
+    left: calc(50% - 70px);
+  }
+
+  /* line 120, ../sass/responsive.scss */
+  #section03 .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    background: transparent;
+  }
+  /* line 127, ../sass/responsive.scss */
+  #section03 .responsive-wrapper {
+    background: transparent url("../images/patterns/redox_01.png") repeat scroll 0 0;
+    border-radius: 3px;
+    opacity: 0.9;
+    height: 100%;
+    padding: 60px 10px 0;
+    position: relative;
+    vertical-align: middle;
+  }
+  /* line 136, ../sass/responsive.scss */
+  #section03 .text {
+    padding: 10px;
+  }
+
+  /* line 140, ../sass/responsive.scss */
+  #section03 .bg::before {
+    display: none;
+  }
+
+  /* line 144, ../sass/responsive.scss */
+  #section04 .picture {
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    text-align: center;
+  }
+  /* line 150, ../sass/responsive.scss */
+  #section04 .picture img {
+    height: 100%;
+  }
+  /* line 154, ../sass/responsive.scss */
+  #section04 .wrapper > div {
+    display: block;
+  }
+  /* line 157, ../sass/responsive.scss */
+  #section04 .iconwrapper-mobile {
+    display: block;
+    margin: 0 -15px;
+    position: relative;
+  }
+  /* line 162, ../sass/responsive.scss */
+  #section04 .devider {
+    height: 1px;
+    margin: 50px 0;
+  }
+
+  /* line 167, ../sass/responsive.scss */
+  #intro {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  /* line 171, ../sass/responsive.scss */
+  #intro img {
+    margin: 0 auto;
+  }
+
+  /* line 175, ../sass/responsive.scss */
+  #navbar {
+    width: 100%;
+    margin: 0;
+  }
+  /* line 178, ../sass/responsive.scss */
+  #navbar li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    transition: border linear 0.3s;
+  }
+  /* line 183, ../sass/responsive.scss */
+  #navbar li:hover {
+    border-bottom: 2px solid #ffaa4f;
+    text-shadow: 0px 1px 1px #000000;
+  }
+  /* line 189, ../sass/responsive.scss */
+  #navbar .arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid black;
+  }
+
+  /* line 198, ../sass/responsive.scss */
+  .indicators {
+    right: 1px;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) and (min-width: 480px) {
+  /* line 206, ../sass/responsive.scss */
+  #section03 .text {
+    height: calc(100% - 140px);
+    overflow: scroll;
+  }
+
+  /* line 212, ../sass/responsive.scss */
+  #section05 .quote1 {
+    top: 34%;
+  }
+  /* line 215, ../sass/responsive.scss */
+  #section05 .quote2 {
+    top: 15%;
+  }
+  /* line 218, ../sass/responsive.scss */
+  #section05 .quote3 {
+    top: 54%;
+  }
+  /* line 221, ../sass/responsive.scss */
+  #section05 .quote4 {
+    top: 74%;
+  }
+  /* line 224, ../sass/responsive.scss */
+  #section05 .quote {
+    left: calc(50% - 191px) !important;
+  }
+
+  /* line 228, ../sass/responsive.scss */
+  #section07 .form form {
+    width: 100%;
+  }
+  /* line 230, ../sass/responsive.scss */
+  #section07 .form form input {
+    display: inline-block;
+    float: left;
+    width: 49%;
+  }
+
+  /* line 236, ../sass/responsive.scss */
+  #section07 .body {
+    width: calc(100% - 90px);
+  }
+
+  /* line 239, ../sass/responsive.scss */
+  #section07 .name,
+  #section07 .subject {
+    margin-right: 4px;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  /* line 248, ../sass/responsive.scss */
+  #main-carousel .slide {
+    width: 100%;
+  }
+  /* line 251, ../sass/responsive.scss */
+  #main-carousel .slide1, #main-carousel .slide3, #main-carousel .slide5 {
+    margin-bottom: 8px;
+  }
+  /* line 254, ../sass/responsive.scss */
+  #main-carousel .carousel-control span:first-child {
+    margin-top: -31px;
+  }
+
+  /* line 259, ../sass/responsive.scss */
+  #section03 .wrapper {
+    padding: 45px 15px;
+  }
+  /* line 262, ../sass/responsive.scss */
+  #section03 .text {
+    overflow: scroll;
+    height: calc(100% - 140px);
+  }
+
+  /* line 268, ../sass/responsive.scss */
+  #section05 .quote1 {
+    top: 34%;
+  }
+  /* line 271, ../sass/responsive.scss */
+  #section05 .quote2 {
+    top: 15%;
+  }
+  /* line 274, ../sass/responsive.scss */
+  #section05 .quote3 {
+    top: 54%;
+  }
+  /* line 277, ../sass/responsive.scss */
+  #section05 .quote4 {
+    top: 74%;
+  }
+  /* line 280, ../sass/responsive.scss */
+  #section05 .quote {
+    left: 5px !important;
+    width: calc(100% - 6px);
+  }
+
+  /* line 286, ../sass/responsive.scss */
+  #section07 .btn {
+    bottom: 0;
+  }
+  /* line 289, ../sass/responsive.scss */
+  #section07 .body {
+    width: calc(100% - 90px);
+  }
+  /* line 292, ../sass/responsive.scss */
+  #section07 .form form {
+    display: block;
+    width: 100%;
+  }
+  /* line 295, ../sass/responsive.scss */
+  #section07 .form form input {
+    margin-left: 0;
+    margin-right: 0;
+    width: 99%;
+  }
+}
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+/* Portrait and Landscape */
+/* Portrait */
+/* Landscape */

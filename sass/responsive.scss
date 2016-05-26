@@ -1,0 +1,343 @@
+/**
+ *   For mediaqueries.
+ */
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1376px) and (min-width: 992px) {
+  #section05 {
+    .quote1 {
+      left: 5%;
+      top:35%;
+    }
+    .quote2 {
+      left: 25%;
+      top:15%;
+    }
+    .quote3 {
+      left: 47%;
+      top: 46%;
+    }
+    .quote4 {
+      left: 56%;
+      top: 66%;
+    }
+  }
+}
+
+@media only screen and (max-width : 1200px) and (min-width: 992px) {
+  #section02 .info {
+    padding: 0 15px;
+  }
+}
+
+@media only screen and (max-width : 1200px) {
+  #popupBox .boxwrapper {
+    left:0 !important;
+    width: calc(100% - 36px);
+  }
+  #floatingnavbar {
+    .info {
+      display: none;
+    }
+  }
+  #section04 {
+    .iconwrapper {
+      display: none;
+    }
+    .iconwrapper-mobile {
+      padding-top: 30px;
+      display:block;
+      img {
+        width: 100%;
+      }
+    }
+    .devider {
+      margin-top: 19em;
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) and (min-width: 768px) {
+  #intro {
+    width: 100%;
+    padding-left:30px;
+    padding-right: 30px;
+    img {
+      margin:0 auto;
+    }
+  }
+  #section02 .featurepicwrapper {
+    margin-bottom: 30px;
+  }
+  #section04 .picture img {
+    width: 100%;
+  }
+  #section05 {
+    .quote1 {
+      left: 5%;
+      top:35%;
+    }
+    .quote2 {
+      left: 40%;
+      top:15%;
+    }
+    .quote3 {
+      left: 47%;
+      top: 52%;
+    }
+    .quote4 {
+      left: 27%;
+      top: 74%;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #navbar {
+    display: block;
+    margin: 0 auto;
+    width: 406px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  #fixednavbar {
+    .navbar-toggle {
+      display: block;
+    }
+  }
+  #section02 {
+    .featurepicwrapper {
+      margin-bottom: 30px;
+    }
+    .clickme {
+      left: calc(50% - 70px);
+    }
+  }  
+  #section03 { 
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      background:transparent;
+    }
+    .responsive-wrapper {
+      background: rgba(0, 0, 0, 0) url("../images/patterns/redox_01.png") repeat scroll 0 0;
+      border-radius: 3px;
+      opacity: 0.9;
+      height: 100%;
+      padding: 60px 10px 0;
+      position: relative;
+      vertical-align: middle;
+    }
+    .text {
+      padding: 10px;
+    }
+  }
+  #section03 .bg::before {
+    display:none;
+  }
+  #section04 {
+    .picture {
+      display: flex;
+      flex-direction: column;
+      height: 150px;
+      justify-content: center;
+      text-align: center;
+      img {
+        height: 100%;
+      }
+    }
+    .wrapper > div {
+      display: block;
+    } 
+    .iconwrapper-mobile {
+      display: block;
+      margin: 0 -15px;
+      position: relative;
+    }
+    .devider {
+      height: 1px;
+      margin: 50px 0;
+    }
+  }  
+  #intro {
+    width: 100%;
+    padding-left:30px;
+    padding-right: 30px;
+    img {
+      margin:0 auto;
+    }
+  }
+  #navbar {
+    width: 100%;
+    margin:0;
+    li {
+      width:100%;
+      text-align: center;
+      border-bottom: 2px solid transparent;
+      transition: border linear 0.3s;
+      &:hover {
+        //box-shadow: 0 0 48px 14px #ffffff inset;
+        border-bottom: 2px solid #ffaa4f;
+        text-shadow: 0px 1px 1px #000000;        
+      }
+    }
+    .arrow-up {
+      width: 0; 
+      height: 0; 
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      
+      border-bottom: 5px solid black;
+    }
+  }
+  .indicators {
+    right: 1px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) and (min-width: 480px) {
+  #section03 {
+    .text {
+      height: calc(100% - 140px);
+      overflow: scroll;
+    }
+  }
+  #section05 {
+    .quote1 {
+      top:34%;
+    }
+    .quote2 {
+      top:15%;
+    }
+    .quote3 {
+      top: 54%;
+    }
+    .quote4 {
+      top: 74%;
+    }
+    .quote {
+      left: calc(50% - 191px) !important;
+    }
+  }
+  #section07 .form form {
+    width: 100%;
+    input {
+      display: inline-block;
+      float: left;
+      width: 49%;
+    }
+  }
+  #section07 .body {
+    width: calc(100% - 90px);
+  }
+  #section07 .name, 
+  #section07 .subject {
+    margin-right: 4px;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+  #main-carousel {
+    .slide {
+      width: 100%;
+    }
+    .slide1, .slide3, .slide5 {
+      margin-bottom: 8px;
+    }
+    .carousel-control span:first-child {
+      margin-top: -31px;
+    }
+  }
+  #section03 {
+    .wrapper {
+      padding: 45px 15px;
+    }
+    .text {
+      overflow:scroll;
+      height: calc(100% - 140px);
+    }
+  }
+  #section05 {
+    .quote1 {
+      top:34%;
+    }
+    .quote2 {
+      top:15%;
+    }
+    .quote3 {
+      top: 54%;
+    }
+    .quote4 {
+      top: 74%;
+    }
+    .quote {
+      left: 5px !important;
+      width: calc(100% - 6px);
+    }
+  }
+  #section07 {
+    .btn {
+      bottom:0;
+    }
+    .body {
+      width: calc(100% - 90px);
+    }
+    .form form {
+      display: block;
+      width: 100%;
+      input {
+        margin-left:0;
+        margin-right:0;
+        width: 99%;
+      }
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) and (min-width: 320px) {
+
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+    
+}
+
+
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px)  {
+}
+

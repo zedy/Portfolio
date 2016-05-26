@@ -1,0 +1,600 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> 
+    <html class="no-js" lang="">
+<!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Aleksandar Zedi</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../assets/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="apple-touch-icon" sizes="57x57" href="../assets/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../assets/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../assets/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../assets/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../assets/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../assets/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../assets/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../assets/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../assets/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/responsive.css">
+        
+        <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script>
+            $(window).load(function(){
+               setTimeout(function(){
+                   $('body').removeClass('loading');
+                   $('#loader-wrapper').find('.text').html('Done');
+                   $('#loader').fadeOut(550, function(){
+                        $('#loader-wrapper').slideUp();                            
+                   });                     
+               }, 1500); // @TODO NET Loads + 1 + full server response.
+            });
+        </script>
+    </head>
+    <body class="loading">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    
+    <!-- pre Loader -->
+    
+    <div id="loader-wrapper">
+        <div id="loader">            
+        </div>
+        <span class="text">Loading</span>
+    </div>
+        
+    <!-- Navigation and menu -->
+        
+    <nav id="fixednavbar" class="on navbar-bg nomargin navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">&nbsp;</span>
+            <span class="icon-bar">&nbsp;</span>
+            <span class="icon-bar">&nbsp;</span>
+          </button>
+        </div>
+        <!-- Collapsible menu -->
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="menu nomargin nopadding">
+                <li data-id="0">Home</li>
+                <li data-id="1">Bio</li>
+                <li data-id="2">Projects</li>
+                <li data-id="3">Tools</li>
+                <li data-id="4">Contact</li>
+            </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Floating menu -->
+    
+    <div id="floatingnavbar" class="off navbar-bg">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".floatingmenu" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">&nbsp;</span>
+            <span class="icon-bar">&nbsp;</span>
+            <span class="icon-bar">&nbsp;</span>
+          </button> 
+        </div>
+        <div class="info">Aleksandar Z.</div>
+        <div class="floatingmenu collapse" aria-expanded="false" style="height: 0px;">
+            <ul class="menu">
+                <li data-id="0">Home</li>
+                <li data-id="1">Bio</li>
+                <li data-id="2">Projects</li>
+                <li data-id="3">Tools</li>
+                <li data-id="4">Contact</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Loader -->
+    
+    <!-- Section 01 | Landing page -->
+    
+    <section id="section01" class="bg1">
+        <h2 id="home" style="visibility: hidden">Home</h2>
+        <div id="intro">
+            <div class="box">
+                <img class="logo img-responsive" src="images/logo.png" />
+                <p>Aleksandar Zedi Professional web development</p>
+            </div>
+            <span class="small small1">&nbsp;</span>
+            <span class="small small2">&nbsp;</span>
+            <span class="small small3">&nbsp;</span>
+            <span class="small small4 glyphicon glyphicon-chevron-down">&nbsp;</span>        
+        </div>
+        <div class="bg">&nbsp;</div>
+    </section>
+    
+     <!-- Section 02 | Projects -->
+    
+    <section id="section02" class="projects">
+        <div class="container">
+            <h2 id="projects" class="heading">Projects</h2>
+            <div class="currentProject">
+                <div class="featurepicwrapper col-md-8 col-xs-12">
+                    <img data-name="projekat1-large.jpg" data-project="loremipsum" class="featurepic img-responsive" src="../images/projekat1-small.png" />
+                    <span class="clickme">Click for full size.</span>
+                </div>
+                <div class="info col-md-4 col-xs-12">
+                    <h3 class="title nomargin nopadding"><span>L</span>orem Ipsum</h3>
+                    <div class="link">
+                        <span>Link</span>
+                        <span>
+                            <a title="Caution: the link will take you to an external site." href="http://google.com" target="_blank">http://google.com</a>
+                        </span>
+                    </div>
+                    <div class="date">                        
+                        <span>Date</span><span>22 Feb 2015 - 03 Mart 2015</span>
+                    </div>
+                    <div class="client">
+                        <span>Client</span><span>Lorem Ipsum</span>
+                    </div>
+                    <div class="tools">
+                        <span>Tools</span>
+                        <ul class="nomargin nopadding">
+                           <li class="css">CSS3</li>
+                           <li class="html">HTML5</li>
+                           <li class="js">jQuery</li>
+                           <li class="boot">Bootstrap</li>
+                           <li class="php">PHP</li> 
+                        </ul>
+                        <div class="clearfix">&nbsp;</div>
+                    </div>
+                    <div class="details">
+                        <span>Details</span>
+                        <p>
+                            Lorem ipsum dolor sit amet, ex mea agam propriae electram, ad zril veniam duo. Ei debitis pertinax per. 
+                            Elitr facilisi an vim, mutat malorum quaestio eu vel. Usu ea quando adolescens. <br/><br/>
+                            In eos tation doming voluptua, dicam verear laoreet vix at. Ullum adipiscing usu ut. Te pro gubergren rationibus.</br> 
+                            Ea modus elitr incorrupte nam. Ei voluptatum definiebas reformidans cum, integre sapientem principes cu mea. <br/><br/>
+                            Lorem ipsum dolor sit amet, ex mea agam propriae electram, ad zril veniam duo. Ei debitis pertinax per. 
+                            Elitr facilisi an vim, mutat malorum quaestio eu vel. Usu ea quando adolescens. <br/><br/>
+                            In eos tation doming voluptua, dicam verear laoreet vix at. Ullum adipiscing usu ut. Te pro gubergren rationibus.</br> 
+                            Ea modus elitr incorrupte nam. Ei voluptatum definiebas reformidans cum, integre sapientem principes cu mea.
+                        </p>
+                    </div>
+                </div>
+                <div class="clearfix">&nbsp;</div>
+            </div>
+            <span class="devider">&nbsp;</span>
+            <div class="slider">
+                <div id="main-carousel" class="carousel slide nopadding" data-ride="carousel" data-interval="0">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#main-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#main-carousel" data-slide-to="1"></li>
+                    </ol>
+            
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="slide1 slide col-xs-6" data-project="loremipsum2.html">
+                                <img class="img-responsive" src="../images/projects/loremipsum2/projekat2-small.jpg" />
+                                <div class="carousel-caption">Lorem Ipsum</div>
+                            </div>
+                            <div class="slide2 slide col-xs-6" data-project="loremipsum2.html">
+                                <img class="img-responsive" src="../images/projekat1-small.png" />
+                                <div class="carousel-caption">Lorem Ipsum</div>
+                            </div> 
+                            <div class="clearfix"></div>                           
+                        </div>
+                        <div class="item">
+                            <div class="slide3 slide col-xs-6">
+                                <img class="img-responsive" src="../images/projekat1-small.png" />
+                                <div class="carousel-caption">Lorem Ipsum</div>
+                            </div>
+                            <div class="slide4 slide col-xs-6">
+                                <img class="img-responsive" src="../images/projekat1-small.png" />
+                                <div class="carousel-caption">Lorem Ipsum</div>
+                            </div>   
+                            <div class="clearfix"></div>                         
+                        </div>
+                    </div>
+            
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#main-carousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#main-carousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 03 | Parallax box -->
+    
+    <section id="section03">
+       <div class="bg">
+          <div class="container wrapper">
+            <div class="responsive-wrapper">            
+              <span id="bio" class="picture">&nbsp;</span>
+              <h2 class="heading">Bio</h2>
+              <div class="text">
+                  <p>
+                    Lorem ipsum dolor sit amet, ex mea agam propriae electram, ad zril veniam duo. Ei debitis pertinax per. 
+                    Elitr facilisi an vim, mutat malorum quaestio eu vel. Usu ea quando adolescens. <br/><br/>
+                    In eos tation doming voluptua, dicam verear laoreet vix at. Ullum adipiscing usu ut. Te pro gubergren rationibus.</br> 
+                    Ea modus elitr incorrupte nam. Ei voluptatum definiebas reformidans cum, integre sapientem principes cu mea. </br></br>                     
+                    Simul alienum vituperata an cum, quot natum detracto ne sed. Error munere imperdiet quo ei, ea eam lorem omnium dolores.
+                    Ei quo tale iudicabit, ea quo detraxit gubergren. Id ius quot bonorum facilisis, vel an brute mazim causae.
+                    An quaestio facilisis signiferumque eum. Eu nostrum fastidii adipiscing mel, et omnes dolore ridens his.
+                  </p>
+              </div>
+            </div>    
+          </div>
+        </div>
+    </section>
+    
+    <!-- Section 04 | T&S -->
+    
+    <section id="section04" class="ts">
+        <div class="container">
+            <h2 id="tools" class="heading">Tools &amp; Services</h2>  
+            <div class="iconwrapper">
+                <div>
+                    <span class="toolname">HTML5</span>
+                    <span class="html tool">&nbsp;</span>
+                </div>
+                <div>
+                    <span class="toolname">CSS3</span>
+                    <span class="css tool">&nbsp;</span>
+                </div>
+                <div>
+                    <span class="toolname">Javascript</span>
+                    <span class="js tool">&nbsp;</span>
+                </div>
+                <div>
+                    <span class="toolname">jQuery</span>
+                    <span class="jquery tool">&nbsp;</span>
+                </div>
+                <div>
+                    <span class="toolname">Drupal</span>
+                    <span class="drupal tool">&nbsp;</span>
+                </div>
+                <div>
+                    <span class="toolname">Sass</span>
+                    <span class="sass tool">&nbsp;</span>
+                </div>
+                <div>
+                    <span class="toolname">Bootstrap3</span>
+                    <span class="boot tool">&nbsp;</span>
+                </div>
+                <div>
+                    <span class="toolname">PHP</span>
+                    <span class="php tool">&nbsp;</span>
+                </div>
+                <div>
+                    <span class="toolname">MySQL</span>
+                    <span class="sql tool">&nbsp;</span>
+                </div>
+                <div>
+                    <span class="toolname">Photoshop</span>
+                    <span class="ps tool">&nbsp;</span>
+                </div>
+                <div>
+                    <span class="toolname">Illustrator</span>
+                    <span class="ai tool">&nbsp;</span>
+                </div>                
+            </div>
+            <div class="iconwrapper-mobile">
+                <div class="nopadding col-xs-12 col-sm-6">
+                    <img class="img-responsive" src="images/tools1.jpg" />
+                </div>
+                <div class="nopadding col-xs-12 col-sm-6">
+                    <img class="img-responsive" src="images/tools2.jpg" />
+                </div>
+                <div class="clearfix"></div>               
+            </div>
+            <div class="devider"></div>
+            <div class="intro">
+                <p></p>
+            </div>
+            <div class="services" id="services">
+                <div class="wrapper">
+                    <div class="nomargin row">
+                        <div class="single nomargin nopadding col-xs-12 col-md-4">
+                            <div class="service">
+                                <div class="picture">
+                                    <img class="img-responsive" src="images/services/website-building-sm.png" />
+                                </div>
+                                <div class="text">
+                                    <h4>Web development</h4>
+                                    <p>
+                                        Everything starts as an idea, and the foundation which ensures the idea is realized as a great website, 
+                                        is <strong>planning.</strong><br/>
+                                        With the first and most crucial step made, we move on to the second which is the injection of  
+                                        carefully mixed balance of skill, experience, with a variety of tools (as listed above), to help us achieve 
+                                        the final goal of clean and price coding, a good user experience and most importantly <strong>client satisfaction.</strong>  
+                                    </p>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="single nomargin nopadding col-xs-12 col-md-4">
+                            <div class="service">
+                                <div class="picture">
+                                    <img class="img-responsive" src="images/services/responsive.png" />
+                                </div>
+                                <div class="text">
+                                    <h4>Responsive websites</h4>
+                                    <p>
+                                        In today's modern and high tech world, where a good presentation can make or break a deal and where we have 
+                                        everything on the go, <strong>Your website</strong> must fit in. Having a visually captivating website just isn't enough, 
+                                        it's functionality has to be precise and <strong>adaptive,</strong> that is the key.That said it has to be cross browser 
+                                        friendly, multi platform and cross device capable.<br/>
+                                        Weather we're making a mobile or desktop first website, ensuring it's responsive and adaptive is one of my top priorities.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single nomargin nopadding col-xs-12 col-md-4">
+                            <div class="service">
+                                <div class="picture">
+                                    <img class="img-responsive" src="images/services/drupaldev.png" />
+                                </div>
+                                <div class="text">
+                                    <h4>Drupal development</h4>
+                                    <p>
+                                        One of the best CMS (content management systems) and my personal favorite, 
+                                        if your goal is to have large website full of various and dynamic content then look no further. 
+                                        With Drupal you get governance, content focus, ease of use, security, global changes, 
+                                        dynamic content, multiple editors, large user base, and many many more. <br/>
+                                        We work on servicing existing templates, creating new ones, developing and maintaining modules, 
+                                        working with views and other contrib. modules, handling content creation and integration, and more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nomargin row">
+                        <div class="single nomargin nopadding col-xs-12 col-md-4">
+                            <div class="service">
+                                <div class="picture">
+                                    <img class="img-responsive" src="images/services/psd2html.png" />
+                                </div>
+                                <div class="text">
+                                    <h4>PSD to HTML</h4>
+                                    <p>
+                                        As one of the most fastest growing services this needs no explanation. <br/>
+                                        If you require a fast, reliable, efficient conversion from a PSD template to a 
+                                        structurally sound, fully semantic, SEO friendly and cross-browser compatible website that meets W3C standards, contact us.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single nomargin nopadding col-xs-12 col-md-4">
+                            <div class="service">
+                                <div class="picture">
+                                    <img class="img-responsive" src="images/services/ajax.png" />
+                                </div>
+                                <div class="text">
+                                    <h4>Ajax</h4>
+                                    <p>
+                                        We work closely with <strong>ajax</strong>, it's one of the favorite tools of a web developer, 
+                                        myself included. We consider ajax as the ninja of the web development world, it works hard under 
+                                        the covers of the browser, unseen, to fetch any data the user requires without any of the hassle of going to another page. <br/>
+                                        If the goal of the website is to be sleek and streamlined, where lots of content is loaded per 
+                                        user request, then ajax is the way to do it.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="single nomargin nopadding col-xs-12 col-md-4">
+                            <div class="service">
+                                <div class="picture">
+                                    <img class="img-responsive" src="images/services/webservices.png" />
+                                </div>
+                                <div class="text">
+                                    <h4>Web services</h4>
+                                    <p>
+                                        Integrating your website with other online web services is very useful, and for some website crucial. 
+                                        We can build our own services or use existing ones, for the purpose of giving a rich client experience.<br/>
+                                        If your desire is to use public social networking services to collect user data, or to develop your 
+                                        own for whatever purpose, we will work hard to unsure the best possible user experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="nomargin row">                
+                        <div class="single nomargin nopadding col-xs-12 col-md-4">
+                            <div class="service">
+                                <div class="picture">
+                                    <img class="img-responsive" src="images/services/webdisign.png" />
+                                </div>
+                                <div class="text">
+                                    <h4>Website design</h4>
+                                    <p>Lorem ipsum dolor sit amet, ex mea agam propriae electram, ad zril veniam duo. Ei debitis pertinax per. 
+                                    Elitr facilisi an vim, mutat malorum quaestio eu vel. Usu ea quando adolescens.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single nomargin nopadding col-xs-12 col-md-4">
+                            <div class="service">
+                                <div class="picture">
+                                    <img class="img-responsive" src="images/services/socials.png" />
+                                </div>
+                                <div class="text">
+                                    <h4>Social Media Integration</h4>
+                                    <p>
+                                        Integrating social media into your website is extremely crucial, as it allows customers easier access to your business,
+                                         if they cannot find you online (due to the lack of information) they will go to your competition. <br/>
+                                        Thus it is important to <strong>promote your `brand` online.</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single nomargin nopadding col-xs-12 col-md-4">
+                            <div class="service">
+                                <div class="picture">
+                                    <img class="img-responsive" src="images/services/website-maintenance.png" />
+                                </div>
+                                <div class="text">
+                                    <h4>Web site maintanace</h4>
+                                    <p>
+                                        Any mechanism with moving parts requires a decent service every now and then, and a website/service is no exception, 
+                                        keeping your machine well oiled and running is as important as it's planning and development phase. 
+                                        Especially if it's a larger project with many interchangeable parts and dynamic content. <br/>
+                                        Weather You are looking for fixing a bug in the code, adding new content, creating new features, 
+                                        removing old and unused sections we are here to help.
+                                    </p>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>                   
+                     <div class="clearfix"></div>
+                </div>                
+                <div class="manymore col-xs-12"><p>And many more, if You have any questions about a project, webiste, webservice and anything 
+                    related to Web develpoment or want to hire us please feel free to contact us through my official Upwork channel, 
+                    LinkedIn profile or the contact form bellow.                                          
+                    </p>
+                </div>               
+            </div>          
+        </div>
+    </section>
+    
+    <!-- Section 05 | Quotes | Parallax box -->
+    
+    <section id="section05" style="height: 700px">
+        <div class="bg">&nbsp;</div>
+        <div class="quote quote1 off">
+            <span class="quoteline">"Lorem ipsum sildit er cumus et anun."</span>
+            <span class="quoter">Lorem ipsum</span>
+        </div>
+        <div class="quote quote2 off">
+            <span class="quoteline">"Lorem ipsum sildit er cumus et anun."</span>
+            <span class="quoter">Lorem ipsum</span>
+        </div>
+        <div class="quote quote3 off">
+            <span class="quoteline">"Lorem ipsum sildit er cumus et anun."</span>
+            <span class="quoter">Lorem ipsum</span>
+        </div>
+        <div class="quote quote4 off">
+            <span class="quoteline">"Lorem ipsum sildit er cumus et anun."</span>
+            <span class="quoter">Lorem ipsum</span>
+        </div>
+    </section>
+    
+    <!-- Section 07 | Contact -->
+    
+    <section id="section07" class="contact">
+        <div class="container">
+            <h2 id="contact" class="heading">Contact</h2>
+            <div id="contactForm" class="form">
+                <form>
+                    <input class="name first" type="text" name="first" placeholder="First name" />
+                    <input class="name last" type="text" name="last" placeholder="Last name" />   
+                    <input class="subject" type="text" name="subject" placeholder="Subject" />                       
+                    <input class="email" type="email" name="email" placeholder="E-mail address" />
+                    <textarea maxlength="250" class="body" rows="3" placeholder="Tell us what is on your mind"></textarea>
+                    <button class="btn" name="Send" value="Send">Send</button>                   
+                </form>                
+            </div>
+            <div class="share">
+                <a href="https://www.upwork.com/o/profiles/users/_~01a5551a3e77c66052/" class="socials up" data-toggle="tooltip" data-placement="top" title="Connect with me on Upwork">&nbsp;</a>
+                <a href="https://www.linkedin.com/in/aleksandar-zedi-719881b9?trk=nav_responsive_tab_profile" class="socials in" data-toggle="tooltip" data-placement="top" title="Add me as a LinkedIn contact">&nbsp;</a>
+                <!-- Not needed for now.
+                <a href="#" class="socials fb" data-toggle="tooltip" data-placement="top" title="Share on Facebook">&nbsp;</a>
+                <a href="#" class="socials gp" data-toggle="tooltip" data-placement="top" title="Share on Google+">&nbsp;</a>
+                -->
+            </div>            
+        </div>
+    </section>
+    
+    <!-- Popup project image box -->
+    
+    <div id="popupBox" class="popupbox" style="display: none;">
+        <div class="boxwrapper">
+            <span id="closePopupBox" class="closebox closed">&nbsp;</span>
+            <div class="outer">                
+                <div class="inner">
+                </div>
+            </div>
+        </div>
+        <div class="backdrop">&nbsp;</div>
+    </div>
+    
+    <!-- Ajax loader div -->
+    
+    <div id="ajaxLoader" style="display: none;"></div>
+    
+    <!-- Footer -->
+    
+    <footer>
+        <div class="container">
+            <p>© Copyright Aleksandar Zedi, Serbia 2016.<br/> All rights reserved.</p>
+        </div>
+    </footer>     
+    
+    <!-- Indicators -->
+    
+    <div class="indicators" id="indicators">
+        <ul>
+            <li class="active" data-id="1">home</li>
+            <li  data-id="2">projects</li>
+            <li  data-id="3">bio</li>
+            <li  data-id="4">tools</li>
+            <li data-id="5">contact</li>
+        </ul>
+    </div>
+    
+    <!-- Modal dialogue for Email status -->     
+       
+    <div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="gridSystemModalLabel">Email status</h4>
+          </div>
+          <div class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Additional scripts -->
+    
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+    </script>
+    </body>
+</html>
