@@ -36,7 +36,10 @@
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script>
-            $(window).load(function(){
+            $(window).load(function(){                
+               // This isn't a real loader, it's just a mockup
+               // Once all RESAURCES are finished, run NET load tests
+               // on server and make real loader. 
                setTimeout(function(){
                    $('body').removeClass('loading');
                    $('#loader-wrapper').find('.text').html('Done');
@@ -133,51 +136,54 @@
         <div class="container">
             <h2 id="projects" class="heading">Projects</h2>
             <div class="currentProject">
-                <div class="featurepicwrapper col-md-8 col-xs-12">
-                    <img data-name="projekat1-large.jpg" data-project="loremipsum" class="featurepic img-responsive" src="../images/projekat1-small.png" />
-                    <span class="clickme">Click for full size.</span>
-                </div>
-                <div class="info col-md-4 col-xs-12">
-                    <h3 class="title nomargin nopadding"><span>L</span>orem Ipsum</h3>
-                    <div class="link">
-                        <span>Link</span>
-                        <span>
-                            <a title="Caution: the link will take you to an external site." href="http://google.com" target="_blank">http://google.com</a>
-                        </span>
-                    </div>
-                    <div class="date">                        
-                        <span>Date</span><span>22 Feb 2015 - 03 Mart 2015</span>
-                    </div>
-                    <div class="client">
-                        <span>Client</span><span>Lorem Ipsum</span>
-                    </div>
-                    <div class="tools">
-                        <span>Tools</span>
-                        <ul class="nomargin nopadding">
-                           <li class="css">CSS3</li>
-                           <li class="html">HTML5</li>
-                           <li class="js">jQuery</li>
-                           <li class="boot">Bootstrap</li>
-                           <li class="php">PHP</li> 
-                        </ul>
-                        <div class="clearfix">&nbsp;</div>
-                    </div>
-                    <div class="details">
-                        <span>Details</span>
-                        <p>
-                            Lorem ipsum dolor sit amet, ex mea agam propriae electram, ad zril veniam duo. Ei debitis pertinax per. 
-                            Elitr facilisi an vim, mutat malorum quaestio eu vel. Usu ea quando adolescens. <br/><br/>
-                            In eos tation doming voluptua, dicam verear laoreet vix at. Ullum adipiscing usu ut. Te pro gubergren rationibus.</br> 
-                            Ea modus elitr incorrupte nam. Ei voluptatum definiebas reformidans cum, integre sapientem principes cu mea. <br/><br/>
-                            Lorem ipsum dolor sit amet, ex mea agam propriae electram, ad zril veniam duo. Ei debitis pertinax per. 
-                            Elitr facilisi an vim, mutat malorum quaestio eu vel. Usu ea quando adolescens. <br/><br/>
-                            In eos tation doming voluptua, dicam verear laoreet vix at. Ullum adipiscing usu ut. Te pro gubergren rationibus.</br> 
-                            Ea modus elitr incorrupte nam. Ei voluptatum definiebas reformidans cum, integre sapientem principes cu mea.
-                        </p>
-                    </div>
-                </div>
-                <div class="clearfix">&nbsp;</div>
+            <div class="featurepicwrapper col-md-8 col-xs-12">
+                <img data-name="portfolio-large.jpg" data-project="portfolio" class="featurepic img-responsive" src="../images/projects/portfolio/portfolio-large.jpg" />
+                <span class="clickme">Click for full size.</span>
             </div>
+            <div class="info col-md-4 col-xs-12">
+                <h3 class="title nomargin nopadding"><span></span></h3>
+                <div class="link">
+                    <span>Link</span>
+                    <span>
+                        don't have one yet
+                    </span>
+                </div>
+                <div class="date">                        
+                    <span>Date</span>22. March 2016 - ongoing<span></span>
+                </div>
+                <div class="client">
+                    <span>Client</span>Aleksandar Zedi<span></span>
+                </div>
+                <div class="tools">
+                    <span>Tools</span>
+                    <ul class="nomargin nopadding">
+                       <li class="css">CSS3</li>
+                       <li class="html">HTML5</li>
+                       <li class="js">jQuery</li>
+                       <li class="boot">Bootstrap</li>
+                       <li class="php">PHP</li> 
+                       <li class="ps">PS</li>
+                    </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="details">
+                    <span>Details</span>
+                    <p>
+                        I wanted to make a simple yet sleek portfolio website for myself.
+                        I game myself a 6h deadline to come up with an idea and make a crude
+                        design for it, I didn't want to overdue it.<br/><br/>
+                        
+                        It's a simple one pager with basic parallax effect, and is ment to serve
+                        as a online version of my CV, and is purely front end, though it does
+                        have a single php file for the mail functionallity.<br/>                                            
+                        
+                        If You are interested in the code, you can find it in the link bellow. <br/><br/>
+                        <a href="https://github.com/zedy/Portfolio">Get me from github</a>
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
             <span class="devider">&nbsp;</span>
             <div class="slider">
                 <div id="main-carousel" class="carousel slide nopadding" data-ride="carousel" data-interval="0">
@@ -190,9 +196,9 @@
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner" role="listbox">
                         <div class="item active">
-                            <div class="slide1 slide col-xs-6" data-project="loremipsum2.html">
-                                <img class="img-responsive" src="../images/projects/loremipsum2/projekat2-small.jpg" />
-                                <div class="carousel-caption">Lorem Ipsum</div>
+                            <div class="slide1 slide col-xs-6" data-project="portfolio.html">
+                                <img class="img-responsive" src="../images/projects/portfolio/portfolio-small.jpg" />
+                                <div class="carousel-caption">Portfolio website</div>
                             </div>
                             <div class="slide2 slide col-xs-6" data-project="loremipsum2.html">
                                 <img class="img-responsive" src="../images/projekat1-small.png" />
