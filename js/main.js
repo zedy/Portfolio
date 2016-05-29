@@ -189,7 +189,7 @@
   /**
    * Initializing the NiceScroll on the document
    */
-  $("html").niceScroll({cursorcolor:"#FFF", cursorwidth:"7px", cursorborder: "1px solid #000"});
+  //$("html").niceScroll({cursorcolor:"#FFF", cursorwidth:"7px", cursorborder: "1px solid #000"});
   
   
   /**
