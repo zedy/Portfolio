@@ -1500,34 +1500,86 @@ section:not(#section03) {
 }
 
 /* ===================================
-   Default bootstrap overrrides
+   404 Page
    =================================== */
 /* line 1127, ../sass/main.scss */
+#four-o-four {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #4d5258;
+}
+
+/* line 1135, ../sass/main.scss */
+.fof-wrapper {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  height: 100%;
+}
+/* line 1141, ../sass/main.scss */
+.fof-wrapper .elements {
+  color: white;
+  font-family: 'Arial';
+}
+/* line 1145, ../sass/main.scss */
+.fof-wrapper h1 {
+  font-size: 14em;
+}
+/* line 1148, ../sass/main.scss */
+.fof-wrapper h3 {
+  font-size: 3.5em;
+}
+/* line 1151, ../sass/main.scss */
+.fof-wrapper .txt {
+  font-size: 1.2em;
+  margin: 1em 0;
+  display: block;
+}
+
+/* line 1157, ../sass/main.scss */
+#countdown {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 29px;
+  color: #000000;
+  display: inline-block;
+  height: 50px;
+  padding-top: 17px;
+  width: 50px;
+}
+
+/* ===================================
+   Default bootstrap overrrides
+   =================================== */
+/* line 1169, ../sass/main.scss */
 .navbar-toggle .icon-bar {
   color: white;
   background: white;
 }
 
-/* line 1131, ../sass/main.scss */
+/* line 1173, ../sass/main.scss */
 .carousel-caption {
   padding-bottom: 20px;
 }
 
-/* line 1134, ../sass/main.scss */
+/* line 1176, ../sass/main.scss */
 .carousel-control {
   z-index: 60;
 }
 
-/* line 1138, ../sass/main.scss */
+/* line 1180, ../sass/main.scss */
 #modal .modal-title {
   font-family: "nexa_boldregular";
   font-size: 20px;
 }
-/* line 1142, ../sass/main.scss */
+/* line 1184, ../sass/main.scss */
 #modal .status {
   font-family: "nexa_lightregular";
 }
-/* line 1145, ../sass/main.scss */
+/* line 1187, ../sass/main.scss */
 #modal .error {
   font-family: "nexa_lightregular";
 }

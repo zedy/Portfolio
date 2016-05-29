@@ -219,8 +219,7 @@
   function portfolio_show_box() {
     $('#section01').find('.box').animate({'opacity': 1}, 650);
   }
-  
-  
+
   /*
    * When a service is clicked on , entire row is expanded
    * and the service color is restored.

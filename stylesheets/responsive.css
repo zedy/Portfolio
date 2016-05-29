@@ -221,62 +221,62 @@
     border-bottom: 5px solid black;
   }
 
-  /* line 198, ../sass/responsive.scss */
+  /* line 197, ../sass/responsive.scss */
   .indicators {
     right: 1px;
   }
 
-  /* line 201, ../sass/responsive.scss */
+  /* line 200, ../sass/responsive.scss */
   .carousel-control.right {
     right: 8px;
   }
 }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) and (min-width: 480px) {
-  /* line 209, ../sass/responsive.scss */
+  /* line 208, ../sass/responsive.scss */
   #section03 .text {
     height: calc(100% - 140px);
     overflow: scroll;
   }
 
-  /* line 215, ../sass/responsive.scss */
+  /* line 214, ../sass/responsive.scss */
   #section05 .quote1 {
     top: 34%;
   }
-  /* line 218, ../sass/responsive.scss */
+  /* line 217, ../sass/responsive.scss */
   #section05 .quote2 {
     top: 15%;
   }
-  /* line 221, ../sass/responsive.scss */
+  /* line 220, ../sass/responsive.scss */
   #section05 .quote3 {
     top: 54%;
   }
-  /* line 224, ../sass/responsive.scss */
+  /* line 223, ../sass/responsive.scss */
   #section05 .quote4 {
     top: 74%;
   }
-  /* line 227, ../sass/responsive.scss */
+  /* line 226, ../sass/responsive.scss */
   #section05 .quote {
     left: calc(50% - 191px) !important;
   }
 
-  /* line 231, ../sass/responsive.scss */
+  /* line 230, ../sass/responsive.scss */
   #section07 .form form {
     width: 100%;
   }
-  /* line 233, ../sass/responsive.scss */
+  /* line 232, ../sass/responsive.scss */
   #section07 .form form input {
     display: inline-block;
     float: left;
     width: 49%;
   }
 
-  /* line 239, ../sass/responsive.scss */
+  /* line 238, ../sass/responsive.scss */
   #section07 .body {
     width: calc(100% - 90px);
   }
 
-  /* line 242, ../sass/responsive.scss */
+  /* line 241, ../sass/responsive.scss */
   #section07 .name,
   #section07 .subject {
     margin-right: 4px;
@@ -284,65 +284,65 @@
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /* line 251, ../sass/responsive.scss */
+  /* line 250, ../sass/responsive.scss */
   #main-carousel .slide {
     width: 100%;
   }
-  /* line 254, ../sass/responsive.scss */
+  /* line 253, ../sass/responsive.scss */
   #main-carousel .slide1, #main-carousel .slide3, #main-carousel .slide5 {
     margin-bottom: 8px;
   }
-  /* line 257, ../sass/responsive.scss */
+  /* line 256, ../sass/responsive.scss */
   #main-carousel .carousel-control span:first-child {
     margin-top: -31px;
   }
 
-  /* line 262, ../sass/responsive.scss */
+  /* line 261, ../sass/responsive.scss */
   #section03 .wrapper {
     padding: 45px 15px;
   }
-  /* line 265, ../sass/responsive.scss */
+  /* line 264, ../sass/responsive.scss */
   #section03 .text {
     overflow: scroll;
     height: calc(100% - 140px);
   }
 
-  /* line 271, ../sass/responsive.scss */
+  /* line 270, ../sass/responsive.scss */
   #section05 .quote1 {
     top: 34%;
   }
-  /* line 274, ../sass/responsive.scss */
+  /* line 273, ../sass/responsive.scss */
   #section05 .quote2 {
     top: 15%;
   }
-  /* line 277, ../sass/responsive.scss */
+  /* line 276, ../sass/responsive.scss */
   #section05 .quote3 {
     top: 54%;
   }
-  /* line 280, ../sass/responsive.scss */
+  /* line 279, ../sass/responsive.scss */
   #section05 .quote4 {
     top: 74%;
   }
-  /* line 283, ../sass/responsive.scss */
+  /* line 282, ../sass/responsive.scss */
   #section05 .quote {
     left: 5px !important;
     width: calc(100% - 6px);
   }
 
-  /* line 289, ../sass/responsive.scss */
+  /* line 288, ../sass/responsive.scss */
   #section07 .btn {
     bottom: 0;
   }
-  /* line 292, ../sass/responsive.scss */
+  /* line 291, ../sass/responsive.scss */
   #section07 .body {
     width: calc(100% - 90px);
   }
-  /* line 295, ../sass/responsive.scss */
+  /* line 294, ../sass/responsive.scss */
   #section07 .form form {
     display: block;
     width: 100%;
   }
-  /* line 298, ../sass/responsive.scss */
+  /* line 297, ../sass/responsive.scss */
   #section07 .form form input {
     margin-left: 0;
     margin-right: 0;

@@ -1122,6 +1122,48 @@ section:not(#section03) {
   }
 }
 /* ===================================
+   404 Page
+   =================================== */
+#four-o-four {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #4d5258;
+}
+.fof-wrapper {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  height: 100%;
+  .elements {
+    color:white;   
+    font-family: 'Arial'; 
+  }
+  h1 {
+    font-size: 14em;
+  }
+  h3 {
+    font-size: 3.5em;
+  }
+  .txt {
+    font-size: 1.2em;
+    margin: 1em 0;
+    display: block;
+  }
+}
+#countdown {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 29px;
+  color: #000000;
+  display: inline-block;
+  height: 50px;
+  padding-top: 17px;
+  width: 50px;
+}
+/* ===================================
    Default bootstrap overrrides
    =================================== */
 .navbar-toggle .icon-bar {
